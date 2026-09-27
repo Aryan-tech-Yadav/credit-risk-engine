@@ -1,0 +1,40 @@
+data:
+  raw_path: "data/raw/application_train.csv"
+  processed_path: "data/processed/"
+
+model:
+  test_size: 0.2
+  random_state: 42
+  scale_pos_weight_ratio: 11.5
+
+policy:
+  low_risk_threshold: 0.10
+  medium_risk_threshold: 0.25
+
+features:
+  numerical:
+    - AMT_INCOME_TOTAL
+    - AMT_CREDIT
+    - AMT_ANNUITY
+    - DAYS_BIRTH
+    - DAYS_EMPLOYED
+    - CNT_FAM_MEMBERS
+    - MONTHLY_INCOME
+    - DTI
+    - LOAN_INCOME_RATIO
+    - EMI_INCOME_RATIO
+    - CREDIT_TERM
+    - AGE_YEARS
+    - EMPLOYMENT_YEARS
+    - INCOME_PER_FAMILY
+    - EXT_SOURCE_MEAN
+
+  categorical:
+    - CODE_GENDER
+    - FLAG_OWN_CAR
+    - FLAG_OWN_REALTY
+    - NAME_CONTRACT_TYPE
+    - NAME_EDUCATION_TYPE
+    - NAME_FAMILY_STATUS
+    - NAME_HOUSING_TYPE
+    - OCCUPATION_TYPE

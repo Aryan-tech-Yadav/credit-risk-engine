@@ -1,0 +1,10 @@
+pandas>=2.3.3
+numpy>=2.2
+scikit-learn>=1.7
+xgboost>=3.0
+shap>=0.50
+streamlit>=1.45
+joblib>=1.4
+matplotlib>=3.9
+pyyaml>=6.0
+pytest>=8.0
